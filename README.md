@@ -1,15 +1,21 @@
 # Toolbox
 
+[![CI](https://github.com/POH8479/toolbox/actions/workflows/ci.yml/badge.svg)](../../actions/workflows/ci.yml)
+
 A personal monorepo by Pieter O’Hearn containing reusable libraries and utilities.
 This is where I collect packages I use across my projects (web, mobile, backend).
 
 The goal is to keep them:
 
-- Well-typed (TypeScript everywhere)
+- Well-typed
 - Small & focused (each package solves one problem well)
 - Reusable across apps, APIs, and experiments
 
 ## 📦 Packages
+
+| Package                                                                             | Description                                                                           | Install                         |
+| ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------- |
+| **[@poh8479/iso-country](https://github.com/POH8479/toolbox/pkgs/npm/iso-country)** | ISO 3166-1 alpha-2 utilities (Zod v4): validation, code to name, emoji flags, search. | `pnpm add @poh8479/iso-country` |
 
 ## Development
 
