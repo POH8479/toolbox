@@ -1,6 +1,6 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@3.1.1/schema.json",
-  "changelog": ["@changesets/changelog-github", { "repo": "pieterohearn/toolbox" }],
+  "changelog": ["@changesets/changelog-github", { "repo": "poh8479/toolbox" }],
   "commit": false,
   "fixed": [],
   "linked": [],
