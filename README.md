@@ -16,6 +16,7 @@ The goal is to keep them:
 | Package                                                                             | Description                                                                           | Install                         |
 | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------- |
 | **[@poh8479/iso-country](https://github.com/POH8479/toolbox/pkgs/npm/iso-country)** | ISO 3166-1 alpha-2 utilities (Zod v4): validation, code to name, emoji flags, search. | `pnpm add @poh8479/iso-country` |
+| **[@poh8479/log-plus](https://github.com/POH8479/toolbox/pkgs/npm/log-plus)**       | Lightweight logging with levels, timestamps, and pluggable formatters/transports.     | `pnpm add @poh8479/log-plus`    |
 
 ## Development
 

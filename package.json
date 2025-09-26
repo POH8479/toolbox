@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "pnpm -r --filter './packages/*' run test",
+    "test": "pnpm jest --coverage",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
@@ -14,15 +14,25 @@
     "version-packages": "changeset version",
     "build": "pnpm -r build",
     "publish-packages": "changeset publish",
-    "release": "pnpm version-packages && pnpm build && pnpm publish-packages"
+    "release": "pnpm version-packages && pnpm build && pnpm publish-packages",
+    "new:pkg": "node scripts/new-package.mjs"
+  },
+  "bin": {
+    "new-package": "scripts/new-package.mjs"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.1",
     "@changesets/cli": "^2.29.7",
     "@eslint/js": "^9.36.0",
+    "@swc/core": "^1.13.19",
+    "@swc/jest": "^0.2.39",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^24.5.2",
     "eslint": "^9.36.0",
     "eslint-config-prettier": "^10.1.8",
+    "jest": "^29.7.0",
     "prettier": "^3.6.2",
+    "ts-jest": "29",
     "tsup": "^8.5.0",
     "typescript": "^5.9.2",
     "typescript-eslint": "^8.44.1"
