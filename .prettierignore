@@ -2,3 +2,5 @@
 **/dist
 **/build
 **/coverage
+.pnpm-store/
+.pnpm/

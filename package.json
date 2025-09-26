@@ -32,10 +32,14 @@
     "eslint-config-prettier": "^10.1.8",
     "jest": "^29.7.0",
     "prettier": "^3.6.2",
+    "simple-git-hooks": "^2.13.1",
     "ts-jest": "29",
     "tsup": "^8.5.0",
     "typescript": "^5.9.2",
     "typescript-eslint": "^8.44.1"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "act pull_request"
   },
   "keywords": [],
   "author": "",

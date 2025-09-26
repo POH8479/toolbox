@@ -40,6 +40,45 @@ Run tests:
 pnpm -r test
 ```
 
+## Running CI Locally
+
+We use [act](https://github.com/nektos/act) to run GitHub Actions workflows locally. This ensures pre-commit or pre-push hooks run the same jobs as CI.
+
+### Install act (requires [Docker](https://docs.docker.com/get-docker/) to be running)
+
+- **macOS**: `brew install act`
+- **Other platforms**: see the [act install guide](https://github.com/nektos/act#installation)
+
+### Run the CI workflow locally
+
+```bash
+act pull_request
+```
+
+This runs the `ci.yml` workflow using the same steps as GitHub’s hosted runners.
+
+### Enable as a git hook
+
+We use [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) to wire this into git.
+
+In `package.json`:
+
+```json
+{
+  "simple-git-hooks": {
+    "pre-push": "act pull_request"
+  }
+}
+```
+
+Enable hooks:
+
+```bash
+pnpm simple-git-hooks
+```
+
+Now every push runs the CI workflow locally before hitting GitHub.
+
 ## Releasing
 
 We use Changesets:
