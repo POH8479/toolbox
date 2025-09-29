@@ -17,10 +17,11 @@ pnpm add @poh8479/iso-country
 ### Validation
 
 ```ts
-import { CountryCodeSchema, CountryCodeInputSchema } from "@poh8479/iso-country";
+import { CountryCodeSchema, CountryCodeInputSchema, CountryNameSchema } from "@poh8479/iso-country";
 
 CountryCodeSchema.parse("NL"); // "NL"
 CountryCodeInputSchema.parse("nl"); // "NL"
+CountryNameSchema.parse("Netherlands"); // "Netherlands"
 ```
 
 ### Lookups
@@ -46,6 +47,9 @@ searchCountries("united"); // United Kingdom, United States, etc.
 
 ```ts
 import type { CountryCode, CountryName } from "@poh8479/iso-country";
+
+declare const code: CountryCode; // "AD" | "AE" | ...
+declare const name: CountryName; // "Andorra" | "United Arab Emirates" | ...
 ```
 
 ## Notes

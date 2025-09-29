@@ -252,7 +252,7 @@ export const ISO_ALPHA2_CODES = [
 
 export type CountryCode = (typeof ISO_ALPHA2_CODES)[number];
 
-export const COUNTRY_NAME_BY_CODE: Record<CountryCode, string> = {
+export const COUNTRY_NAME_BY_CODE = {
   AD: "Andorra",
   AE: "United Arab Emirates",
   AF: "Afghanistan",
@@ -502,6 +502,6 @@ export const COUNTRY_NAME_BY_CODE: Record<CountryCode, string> = {
   ZA: "South Africa",
   ZM: "Zambia",
   ZW: "Zimbabwe",
-};
+} as const satisfies Record<CountryCode, string>;
 
 export type CountryName = (typeof COUNTRY_NAME_BY_CODE)[CountryCode];

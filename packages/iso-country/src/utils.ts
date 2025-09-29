@@ -1,8 +1,5 @@
-import type { CountryCode } from "./constants";
 import { COUNTRY_NAME_BY_CODE, ISO_ALPHA2_CODES } from "./constants";
-
-/** Country name type (string). Provided for convenience. */
-export type CountryName = (typeof COUNTRY_NAME_BY_CODE)[CountryCode];
+import type { CountryCode, CountryName } from "./constants";
 
 /** ASCII-fold + case-insensitive slug for names, cities, etc. */
 export function slugifyName(input: string): string {
@@ -39,7 +36,7 @@ export function codeToFlagEmoji(code: CountryCode): string {
   return String.fromCodePoint(base + (code.charCodeAt(0) - 65), base + (code.charCodeAt(1) - 65));
 }
 
-export const ALL_COUNTRIES: { code: CountryCode; name: string; flag: string }[] =
+export const ALL_COUNTRIES: { code: CountryCode; name: CountryName; flag: string }[] =
   ISO_ALPHA2_CODES.map((code) => ({
     code,
     name: COUNTRY_NAME_BY_CODE[code],
