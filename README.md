@@ -13,10 +13,10 @@ The goal is to keep them:
 
 ## 📦 Packages
 
-| Package                                                                             | Description                                                                           | Install                         |
-| ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------- |
-| **[@poh8479/iso-country](https://github.com/POH8479/toolbox/pkgs/npm/iso-country)** | ISO 3166-1 alpha-2 utilities (Zod v4): validation, code to name, emoji flags, search. | `pnpm add @poh8479/iso-country` |
-| **[@poh8479/log-plus](https://github.com/POH8479/toolbox/pkgs/npm/log-plus)**       | Lightweight logging with levels, timestamps, and pluggable formatters/transports.     | `pnpm add @poh8479/log-plus`    |
+| Package                                                                                   | Description                                                                           | Install                               |
+| ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------- |
+| **[@Pieter-OHearn/iso-country](https://github.com/POH8479/toolbox/pkgs/npm/iso-country)** | ISO 3166-1 alpha-2 utilities (Zod v4): validation, code to name, emoji flags, search. | `pnpm add @Pieter-OHearn/iso-country` |
+| **[@Pieter-OHearn/log-plus](https://github.com/POH8479/toolbox/pkgs/npm/log-plus)**       | Lightweight logging with levels, timestamps, and pluggable formatters/transports.     | `pnpm add @Pieter-OHearn/log-plus`    |
 
 ## Development
 
@@ -101,4 +101,4 @@ We use Changesets:
 
 ## Naming
 
-All packages are published under the npm scope @poh8479/\*.
+All packages are published under the npm scope @Pieter-OHearn/\*.

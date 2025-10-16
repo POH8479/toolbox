@@ -1,4 +1,4 @@
-# @poh8479/iso-country
+# @Pieter-OHearn/iso-country
 
 ISO 3166-1 alpha-2 utilities and zod schema (Zod v4). Strict validation, code to name, emoji flags, and search.  
 Tiny, tree-shakeable, and framework-agnostic.
@@ -9,7 +9,7 @@ Tiny, tree-shakeable, and framework-agnostic.
 [![License](https://img.shields.io/badge/license-MIT-blue)](packages/iso-country/LICENSE)
 
 ```sh
-pnpm add @poh8479/iso-country
+pnpm add @Pieter-OHearn/iso-country
 ```
 
 ## API
@@ -17,7 +17,11 @@ pnpm add @poh8479/iso-country
 ### Validation
 
 ```ts
-import { CountryCodeSchema, CountryCodeInputSchema, CountryNameSchema } from "@poh8479/iso-country";
+import {
+  CountryCodeSchema,
+  CountryCodeInputSchema,
+  CountryNameSchema,
+} from "@Pieter-OHearn/iso-country";
 
 CountryCodeSchema.parse("NL"); // "NL"
 CountryCodeInputSchema.parse("nl"); // "NL"
@@ -27,7 +31,7 @@ CountryNameSchema.parse("Netherlands"); // "Netherlands"
 ### Lookups
 
 ```ts
-import { codeToName, nameToCode, codeToFlagEmoji } from "@poh8479/iso-country";
+import { codeToName, nameToCode, codeToFlagEmoji } from "@Pieter-OHearn/iso-country";
 
 codeToName("NL"); // "Netherlands"
 nameToCode("côte d’ivoire"); // "CI"
@@ -37,7 +41,7 @@ codeToFlagEmoji("NL"); // "🇳🇱"
 ### Lists & Search
 
 ```ts
-import { ALL_COUNTRIES, searchCountries } from "@poh8479/iso-country";
+import { ALL_COUNTRIES, searchCountries } from "@Pieter-OHearn/iso-country";
 
 ALL_COUNTRIES[0]; // { code: "AD", name: "Andorra", flag: "🇦🇩" }
 searchCountries("united"); // United Kingdom, United States, etc.
@@ -46,7 +50,7 @@ searchCountries("united"); // United Kingdom, United States, etc.
 ## Types
 
 ```ts
-import type { CountryCode, CountryName } from "@poh8479/iso-country";
+import type { CountryCode, CountryName } from "@Pieter-OHearn/iso-country";
 
 declare const code: CountryCode; // "AD" | "AE" | ...
 declare const name: CountryName; // "Andorra" | "United Arab Emirates" | ...

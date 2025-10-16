@@ -1,4 +1,4 @@
-# @poh8479/log-plus
+# @Pieter-OHearn/log-plus
 
 A cross‑platform logging library for **Node.js**, **Web**, and **Native**. It brings Java‑style log levels and UTC timestamps to JavaScript with a consistent API, pluggable **formatters** and **transports**, and zero required runtime dependencies.
 
@@ -18,7 +18,7 @@ A cross‑platform logging library for **Node.js**, **Web**, and **Native**. It 
 ## Install
 
 ```bash
-pnpm add @poh8479/log-plu
+pnpm add @Pieter-OHearn/log-plu
 ```
 
 ## Quick start

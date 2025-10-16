@@ -1,4 +1,4 @@
-# @poh8479/log-plus
+# @Pieter-OHearn/log-plus
 
 ## 0.1.0
 

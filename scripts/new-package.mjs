@@ -129,7 +129,7 @@ function scaffold({ name, template, license, isPrivate, registry, dir, createCha
   const isReact = template === "react" || template === "react-native";
 
   const pkg = {
-    name: `@poh8479/${name}`,
+    name: `@Pieter-OHearn/${name}`,
     version: "0.0.1",
     type: "module",
     sideEffects: false,

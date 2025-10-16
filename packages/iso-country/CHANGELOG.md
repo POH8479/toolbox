@@ -1,4 +1,4 @@
-# @poh8479/iso-country
+# @Pieter-OHearn/iso-country
 
 ## 0.2.0
 
