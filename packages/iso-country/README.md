@@ -5,7 +5,7 @@ Tiny, tree-shakeable, and framework-agnostic.
 
 ## Install
 
-[![version](https://img.shields.io/github/package-json/v/POH8479/toolbox?filename=packages%2Fiso-country%2Fpackage.json&label=%40poh8479%2Fiso-country)](packages/iso-country)
+[![version](https://img.shields.io/github/package-json/v/pieter-ohearn/toolbox?filename=packages%2Fiso-country%2Fpackage.json&label=%40pieter-ohearn%2Fiso-country)](packages/iso-country)
 [![License](https://img.shields.io/badge/license-MIT-blue)](packages/iso-country/LICENSE)
 
 ```sh

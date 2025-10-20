@@ -1,6 +1,6 @@
 # Toolbox
 
-[![CI](https://github.com/POH8479/toolbox/actions/workflows/ci.yml/badge.svg)](../../actions/workflows/ci.yml)
+[![CI](https://github.com/pieter-ohearn/toolbox/actions/workflows/ci.yml/badge.svg)](../../actions/workflows/ci.yml)
 
 A personal monorepo by Pieter O’Hearn containing reusable libraries and utilities.
 This is where I collect packages I use across my projects (web, mobile, backend).
@@ -13,17 +13,17 @@ The goal is to keep them:
 
 ## 📦 Packages
 
-| Package                                                                                   | Description                                                                           | Install                               |
-| ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------- |
-| **[@Pieter-OHearn/iso-country](https://github.com/POH8479/toolbox/pkgs/npm/iso-country)** | ISO 3166-1 alpha-2 utilities (Zod v4): validation, code to name, emoji flags, search. | `pnpm add @Pieter-OHearn/iso-country` |
-| **[@Pieter-OHearn/log-plus](https://github.com/POH8479/toolbox/pkgs/npm/log-plus)**       | Lightweight logging with levels, timestamps, and pluggable formatters/transports.     | `pnpm add @Pieter-OHearn/log-plus`    |
+| Package                                                                                         | Description                                                                           | Install                               |
+| ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------- |
+| **[@Pieter-OHearn/iso-country](https://github.com/pieter-ohearn/toolbox/pkgs/npm/iso-country)** | ISO 3166-1 alpha-2 utilities (Zod v4): validation, code to name, emoji flags, search. | `pnpm add @Pieter-OHearn/iso-country` |
+| **[@Pieter-OHearn/log-plus](https://github.com/pieter-ohearn/toolbox/pkgs/npm/log-plus)**       | Lightweight logging with levels, timestamps, and pluggable formatters/transports.     | `pnpm add @Pieter-OHearn/log-plus`    |
 
 ## Development
 
 Clone and install:
 
 ```bash
-git clone git@github.com:POH8479/toolbox.git
+git clone git@github.com:pieter-ohearn/toolbox.git
 cd toolbox
 pnpm install
 ```

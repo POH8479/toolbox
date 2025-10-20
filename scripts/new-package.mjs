@@ -21,7 +21,7 @@ const DEFAULTS = {
   template: process.env.NEW_PACKAGE_DEFAULT_TEMPLATE ?? "lib",
   license: process.env.NEW_PACKAGE_DEFAULT_LICENSE ?? "MIT",
   registry: process.env.NEW_PACKAGE_DEFAULT_REGISTRY ?? "https://npm.pkg.github.com",
-  scope: process.env.NEW_PACKAGE_DEFAULT_SCOPE ?? "poh8479",
+  scope: process.env.NEW_PACKAGE_DEFAULT_SCOPE ?? "pieter-ohearn",
   changeset: process.env.NEW_PACKAGE_DEFAULT_CHANGESET ?? "yes", // yes | no
 };
 
